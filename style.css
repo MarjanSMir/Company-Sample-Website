@@ -10,8 +10,17 @@
     outline: none;
     font-family: 'Bellota Text', cursive;
     font-weight: 400;
+    overflow-x: hidden;
 }
 header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.float{
     width: 100%;
     height: 500px;
     display: flex;
@@ -19,9 +28,19 @@ header{
     align-items: center;
     flex-direction: column;
     background: rgb(26, 241, 248);
-    border-radius: 3px 3px 100% 100%;
-
+    clip-path: circle(55.0% at 50% 24%);
+    animation: scaleX 10s infinite;
+    animation-direction: alternate;
 }
+@keyframes scaleX {
+    0% {
+      transform: scaleX(1);
+    }
+  
+    100% {
+      transform: scaleX(1.1);
+    }
+  }
 .navbar{
     width: 100%;
     display: flex;
@@ -35,7 +54,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
 }
 .li{
     width: 2rem;
@@ -48,7 +67,7 @@ header{
     transition: all 3s;
 }
 .link{
-    width: 1rem;
+    width: 1.11rem;
     word-wrap: break-word;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
@@ -72,4 +91,76 @@ header{
     padding: 1rem;
     border-radius: 10px;
     text-shadow: 0.1rem 0.1rem rgb(145, 144, 144) ;
+    overflow-y: hidden;
 }
+.logo {
+    height:fit-content;
+    height: 300px;
+    font-size: 10rem;
+    color:rgb(26, 241, 248);
+    margin-top: 20px;
+  }
+
+  /* second part*/
+
+  .costumers{
+      width: 100%;
+      height: auto;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .cos-head{
+    font-size: 7rem;
+    color: rgb(161, 161, 161);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: -50px;
+  }
+  .container{
+      width: 100%;
+      height: 700px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      
+    transition: 1s;      
+  }
+
+  .card{
+      width: 350px;
+      height: 500px;
+      background-color: rgb(233, 227, 227);
+      border-radius: 2%;
+  }
+  .quote{
+      font-size: 3rem;
+      padding: 4%;
+      color: #ff4500;
+  }
+  .star{
+    font-size: 1rem;
+    padding: 4% 0;
+    color: #ff4500;
+  }
+  .para{
+      text-align: justify;
+      font-size: large;
+      padding: 0 4%;
+  }
+  .cos-img{
+        padding-top: 10%;  
+  }
+  .cos-img > img{
+    width: 120px;
+      height: 120px;
+      border-radius: 50%;
+
+  }
+span{
+      font-weight: bolder;
+      font-size: 20px;
+      
+  }
+
