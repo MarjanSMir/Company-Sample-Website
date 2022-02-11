@@ -12,19 +12,21 @@
     font-weight: 400;
     overflow-x: hidden;
 }
-header{
+
+header {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.float{
+
+.float {
     width: 100%;
     height: 500px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background: rgb(26, 241, 248);
@@ -32,31 +34,35 @@ header{
     animation: scaleX 10s infinite;
     animation-direction: alternate;
 }
+
 @keyframes scaleX {
     0% {
-      transform: scaleX(1);
+        transform: scaleX(1);
     }
-  
+
     100% {
-      transform: scaleX(1.1);
+        transform: scaleX(1.1);
     }
-  }
-.navbar{
+}
+
+.navbar {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.menu{
+
+.menu {
     width: 59%;
     display: flex;
     flex-direction: row;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
-.li{
+
+.li {
     width: 2rem;
     display: flex;
     flex-direction: row;
@@ -66,7 +72,8 @@ header{
     height: 300px;
     transition: all 3s;
 }
-.link{
+
+.link {
     width: 1.11rem;
     word-wrap: break-word;
     font-size: 1.5rem;
@@ -75,92 +82,131 @@ header{
     font-weight: bold;
     text-align: center;
 }
-.li:hover .link{  
+
+.li:hover .link {
     width: 100%;
     letter-spacing: 2px;
 }
-.li:hover{
+
+.li:hover {
     width: 155px;
     background-color: rgba(248, 248, 248, 0.589);
 }
-.create-design{
+
+.create-design {
     color: white;
-    font-family:"Monoton", cursive;
+    font-family: "Monoton", cursive;
     font-size: 5.5rem;
     background-color: rgba(248, 248, 248, 0.589);
     padding: 1rem;
     border-radius: 10px;
-    text-shadow: 0.1rem 0.1rem rgb(145, 144, 144) ;
+    text-shadow: 0.1rem 0.1rem rgb(145, 144, 144);
     overflow-y: hidden;
 }
+
 .logo {
-    height:fit-content;
+    height: fit-content;
     height: 300px;
     font-size: 10rem;
-    color:rgb(26, 241, 248);
+    color: rgb(26, 241, 248);
     margin-top: 20px;
-  }
+}
 
-  /* second part*/
+/* second part*/
 
-  .costumers{
-      width: 100%;
-      height: auto;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      flex-direction: column;
-  }
-  .cos-head{
+.costumers, .Team {
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cos-head, .Team-head {
     font-size: 7rem;
-    color: rgb(161, 161, 161);
+    color: rgb(194, 194, 194);
     font-weight: bolder;
     letter-spacing: 2px;
     margin-bottom: -50px;
-  }
-  .container{
-      width: 100%;
-      height: 700px;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      
-    transition: 1s;      
-  }
+}
 
-  .card{
-      width: 350px;
-      height: 500px;
-      background-color: rgb(233, 227, 227);
-      border-radius: 2%;
-  }
-  .quote{
-      font-size: 3rem;
-      padding: 4%;
-      color: #ff4500;
-  }
-  .star{
+.container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 1s;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 2%;
+    box-shadow: 2px 2px 30px 3px rgb(185, 184, 184);
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow: 8px 8px 30px 10px rgb(185, 184, 184);
+}
+
+
+
+.quote {
+    font-size: 3rem;
+    padding: 4%;
+    color: #ff4500;
+}
+
+.star {
     font-size: 1rem;
     padding: 4% 0;
     color: #ff4500;
-  }
-  .para{
-      text-align: justify;
-      font-size: large;
-      padding: 0 4%;
-  }
-  .cos-img{
-        padding-top: 10%;  
-  }
-  .cos-img > img{
+}
+
+.para {
+    text-align: justify;
+    font-size: large;
+    padding: 0 4%;
+}
+
+.cos-img {
+    padding-top: 10%;
+}
+
+.cos-img>img {
     width: 120px;
-      height: 120px;
-      border-radius: 50%;
+    height: 120px;
+    border-radius: 50%;
 
-  }
-span{
-      font-weight: bolder;
-      font-size: 20px;
-      
-  }
+}
 
+span {
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+/*third part*/
+.tcard{
+    width: 350px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 40px 3px rgb(212, 212, 212);
+    position: relative;
+}
+.tcard:hover{
+    box-shadow: 2px 2px 40px 3px rgb(212, 212, 212);
+}
+
+.discrip{
+    border-radius: 50%;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 85%;
+}
