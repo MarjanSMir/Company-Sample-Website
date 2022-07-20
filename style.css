@@ -114,7 +114,7 @@ header {
 
 /* second part*/
 
-.costumers, .Team {
+.costumers, .Team, .contact{
     width: 100%;
     height: auto;
     display: flex;
@@ -123,7 +123,7 @@ header {
     flex-direction: column;
 }
 
-.cos-head, .Team-head {
+.cos-head, .Team-head, .Contact-head{
     font-size: 7rem;
     color: rgb(194, 194, 194);
     font-weight: bolder;
@@ -307,3 +307,5 @@ span {
     background: white;
     margin: 0.5rem;
 }
+/*fourth part*/
+
