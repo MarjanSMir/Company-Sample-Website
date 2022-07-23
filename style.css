@@ -13,7 +13,7 @@
     overflow-x: hidden;
 }
 
-header {
+header,footer {
     width: 100%;
     height: auto;
     display: flex;
@@ -114,7 +114,9 @@ header {
 
 /* second part*/
 
-.costumers, .Team, .contact{
+.costumers,
+.Team,
+.contact {
     width: 100%;
     height: auto;
     display: flex;
@@ -123,7 +125,9 @@ header {
     flex-direction: column;
 }
 
-.cos-head, .Team-head, .Contact-head{
+.cos-head,
+.Team-head,
+.Contact-head {
     font-size: 7rem;
     color: rgb(194, 194, 194);
     font-weight: bolder;
@@ -148,9 +152,11 @@ header {
     box-shadow: 2px 2px 30px 3px rgb(185, 184, 184);
     transition: 0.5s;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 8px 8px 30px 10px rgb(185, 184, 184);
 }
+
 .quote {
     font-size: 3rem;
     padding: 4%;
@@ -188,7 +194,7 @@ span {
 
 /*third part*/
 
-.tcard{
+.tcard {
     width: 25rem;
     height: 505px;
     padding: 1rem 1rem 2rem 1rem;
@@ -196,11 +202,12 @@ span {
     box-shadow: 0.5rem 0.5rem 1.5rem 1rem rgb(212, 212, 212);
     position: relative;
 }
-.tcard:hover{
+
+.tcard:hover {
     box-shadow: 2px 2px 40px 3px rgb(212, 212, 212);
 }
 
-.discrip{
+.discrip {
     border-radius: 50%;
     background-color: black;
     width: 50px;
@@ -209,7 +216,8 @@ span {
     top: 0;
     left: 85%;
 }
-.tcard{
+
+.tcard {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -217,45 +225,55 @@ span {
     position: relative;
     transition: 0.5s;
 }
-.T-image{
+
+.T-image {
     width: 90%;
     height: auto;
 }
-.T-text{
+
+.T-text {
     width: 90%;
     height: auto;
     padding: 3px;
     position: relative;
 }
-.T-name, .T-ability{
+
+.T-name,
+.T-ability {
     text-align: left;
 }
-.T-name{
+
+.T-name {
     color: #ff4500;
     font-weight: bold;
     font-size: 1.3rem;
 }
-.T-ability{
+
+.T-ability {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0.5rem 0rem 1rem 0rem;
 }
-.T-ability li{
+
+.T-ability li {
     font-size: 1.1rem;
 }
-.T-btn{
+
+.T-btn {
     background-color: #ff4500;
     border: 0;
     width: 100px;
     height: 30px;
     border-radius: 5rem;
 }
-.T-btn a{
+
+.T-btn a {
     color: white;
     font-size: 1rem;
 }
-.story{
+
+.story {
     width: 100%;
     height: 100%;
     background: rgba(248, 41, 41, 0.67);
@@ -272,24 +290,29 @@ span {
     transform-origin: top right;
     transition: all 0.8s;
 }
-.change.story-btn .story-line{
+
+.change.story-btn .story-line {
     transform: rotate(45deg);
 }
-.story h4{
+
+.story h4 {
     font-size: 4rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.change.story{
+
+.change.story {
     transform: scale(1);
     border-radius: 0;
 }
-.Story-Para{
+
+.Story-Para {
     font-size: 1rem;
     text-align: justify;
     padding: 5%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.story-btn{
+
+.story-btn {
     width: 4rem;
     height: 4rem;
     background: #222;
@@ -299,13 +322,111 @@ span {
     display: flex;
     align-items: center;
     z-index: 10;
-    transition:transform 0.5s;
+    transition: transform 0.5s;
 }
-.story-line{
+
+.story-line {
     width: 100%;
     height: 0.1rem;
     background: white;
     margin: 0.5rem;
 }
-/*fourth part*/
 
+/*fourth part*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 1000px;
+}
+.gray-rec{
+    width: 80%;
+    height: 400px;
+    background: rgba(230, 220, 220, 0.826);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 19px rgb(132, 132, 132);    
+}
+.blue-box{
+    width: 38%;
+    height: 500px;
+    background: rgba(109, 225, 236, 0.785);
+    position: absolute;
+    top: 38%;
+    left: 12%;
+    transform: perspective(800px) rotateY(15deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 80px rgb(139, 137, 137);
+    transition: 0.5s;
+}
+.blue-box:hover{
+    top: 35%;
+    box-shadow: 20px 20px 80px rgb(82, 80, 80);
+}
+.image{
+    width: 90%;
+    height: 90%;
+    background: url(/images/form-img.png) no-repeat center;
+    background-size: contain;
+}
+
+.form{
+    width: 40%;
+    height: 350px;
+    background-color: white;
+    position: absolute;
+    top: 37.5%;
+    left: 42%;
+    transform: perspective(800px) rotateY(-15deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 5rem;
+    box-shadow: 10px 10px 80px rgb(139, 137, 137);
+    transition: 0.5s;
+    
+}
+.form:hover{
+    top:34.5%;
+    box-shadow: 20px 20px 80px rgb(82, 80, 80);
+}
+.form form{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form form input, textarea{
+    width: 90%;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 5rem;
+    padding: 3px;
+    margin: 3px;
+    font-weight: bold;
+}
+.form form textarea{
+    height: 200px;
+    border-radius: 1rem;
+    padding: 4px;
+}
+form .submit{
+    background: rgba(109, 225, 236, 0.785);
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*footer*/
+.footer{
+    font-size: 22px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
