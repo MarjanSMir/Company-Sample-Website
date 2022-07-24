@@ -13,7 +13,25 @@
     overflow-x: hidden;
 }
 
-header,footer {
+.link,
+.T-name,
+.footer,
+.form form input,
+textarea {
+    font-weight: bold;
+}
+
+.link,
+.story,
+form .submit,
+.create-design,
+.T-btn a
+    {
+    color: white;
+}
+
+header,
+footer {
     width: 100%;
     height: auto;
     display: flex;
@@ -77,9 +95,7 @@ header,footer {
     width: 1.11rem;
     word-wrap: break-word;
     font-size: 1.5rem;
-    color: rgb(255, 255, 255);
     margin-top: 4%;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -94,7 +110,6 @@ header,footer {
 }
 
 .create-design {
-    color: white;
     font-family: "Monoton", cursive;
     font-size: 5.5rem;
     background-color: rgba(248, 248, 248, 0.589);
@@ -104,6 +119,9 @@ header,footer {
     overflow-y: hidden;
 }
 
+.create-design-mobile{
+    display: none;
+}
 .logo {
     height: fit-content;
     height: 300px;
@@ -113,7 +131,6 @@ header,footer {
 }
 
 /* second part*/
-
 .costumers,
 .Team,
 .contact {
@@ -193,7 +210,6 @@ span {
 }
 
 /*third part*/
-
 .tcard {
     width: 25rem;
     height: 505px;
@@ -245,7 +261,6 @@ span {
 
 .T-name {
     color: #ff4500;
-    font-weight: bold;
     font-size: 1.3rem;
 }
 
@@ -269,7 +284,6 @@ span {
 }
 
 .T-btn a {
-    color: white;
     font-size: 1rem;
 }
 
@@ -277,7 +291,6 @@ span {
     width: 100%;
     height: 100%;
     background: rgba(248, 41, 41, 0.67);
-    color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -333,7 +346,7 @@ span {
 }
 
 /*fourth part*/
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -341,14 +354,16 @@ span {
     position: relative;
     height: 1000px;
 }
-.gray-rec{
+
+.gray-rec {
     width: 80%;
     height: 400px;
     background: rgba(230, 220, 220, 0.826);
     border-radius: 0.5rem;
-    box-shadow: 1px 1px 19px rgb(132, 132, 132);    
+    box-shadow: 1px 1px 19px rgb(132, 132, 132);
 }
-.blue-box{
+
+.blue-box {
     width: 38%;
     height: 500px;
     background: rgba(109, 225, 236, 0.785);
@@ -363,18 +378,20 @@ span {
     box-shadow: 10px 10px 80px rgb(139, 137, 137);
     transition: 0.5s;
 }
-.blue-box:hover{
+
+.blue-box:hover {
     top: 35%;
     box-shadow: 20px 20px 80px rgb(82, 80, 80);
 }
-.image{
+
+.image {
     width: 90%;
     height: 90%;
     background: url(/images/form-img.png) no-repeat center;
     background-size: contain;
 }
 
-.form{
+.form {
     width: 40%;
     height: 350px;
     background-color: white;
@@ -389,13 +406,15 @@ span {
     margin: 5rem;
     box-shadow: 10px 10px 80px rgb(139, 137, 137);
     transition: 0.5s;
-    
+
 }
-.form:hover{
-    top:34.5%;
+
+.form:hover {
+    top: 34.5%;
     box-shadow: 20px 20px 80px rgb(82, 80, 80);
 }
-.form form{
+
+.form form {
     width: 80%;
     height: 90%;
     display: flex;
@@ -403,30 +422,95 @@ span {
     align-items: center;
     justify-content: space-evenly;
 }
-.form form input, textarea{
+
+.form form input,
+textarea {
     width: 90%;
     height: 35px;
     border: 1px solid gray;
     border-radius: 5rem;
     padding: 3px;
     margin: 3px;
-    font-weight: bold;
+
 }
-.form form textarea{
+
+.form form textarea {
     height: 200px;
     border-radius: 1rem;
     padding: 4px;
 }
-form .submit{
+
+form .submit {
     background: rgba(109, 225, 236, 0.785);
     border: 0;
-    color: white;
     font-size: 20px;
     cursor: pointer;
 }
+
 /*footer*/
-.footer{
+.footer {
     font-size: 22px;
     margin-bottom: 5%;
-    font-weight: bold;
+}
+ /* responsive*/
+@media screen and (min-width: 1100px) and (max-width:1300px){
+    .create-design{
+        font-size: 3.5rem;
+    }
+    .third-t-ability li{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 700px) and (max-width:1099px){
+    .create-design{
+        font-size: 2rem;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        margin-top: 4rem;
+    }
+    .container > .card, .container > .tcard{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .blue-box{
+        display: none;
+    }
+    .form{
+        top: 37.5%;
+        left: 20%;
+        transform:   perspective(0) rotateY(0);
+    }
+    .form:hover{
+        top: 37.5%;
+    }
+}
+@media screen and (max-width:699px){
+    .create-design{
+     font-size: 3rem;
+    }
+    .float{
+        clip-path: none;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        margin-top: 4rem;
+    }
+    .container > .card, .container > .tcard{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .blue-box{
+        display: none;
+    }
+    .form{
+        top: 37.5%;
+        left: 20%;
+        transform:   perspective(0) rotateY(0);
+    }
+    .form:hover{
+        top: 37.5%;
+    }
 }
